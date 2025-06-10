@@ -46,7 +46,6 @@ const Admissions = () => {
                         </tr>
                         <tr>
                             <td>B.A. English Literature </td>
-
                             <td>10+2 (or equivalent)</td>
                             <td>Any Stream</td>
                             <td>40%</td>
@@ -67,7 +66,7 @@ const Admissions = () => {
             </div>
 
             <div className="info-card">
-                <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our <Link to="/Courses" className="nav-link-text">Courses page</Link> or <Link to="/Contact" className="nav-link-text">Contact us</Link> directly.</p>
+                <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our <a href="/courses" className="nav-link-text">Courses page</a> or <a href="/contact" className="nav-link-text">Contact us</a> directly.</p>
             </div>
         </div>
     );
