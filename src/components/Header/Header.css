@@ -1,8 +1,6 @@
-/* src/components/Header/Header.css */
-
 .header {
     width: 100%;
-    background-color: #a6bb06;
+    background-color: #1a2a47;
     color: white;
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -10,7 +8,7 @@
 
 .header-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -36,7 +34,7 @@
     color: white;
 }
 
-@media screen and (max-width: 1080px) {
+@media (max-width: 768px) {
     .desktop-nav {
         display: none;
     }

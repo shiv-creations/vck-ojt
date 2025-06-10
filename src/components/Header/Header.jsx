@@ -1,4 +1,3 @@
-// src/components/Header/Header.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
@@ -10,7 +9,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <Link to="/" className="logo">Vivekanand College Kolhapur</Link>
+        <Link to="/" className="logo">My College</Link>
         <nav className="desktop-nav">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link">About</Link>

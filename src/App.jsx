@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -18,7 +17,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="hero-layout">
+      <div className="app-container">
         <Header />
         <main className="main-content">
           <Routes>
