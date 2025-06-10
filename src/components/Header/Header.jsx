@@ -12,11 +12,11 @@ const Header = () => {
       <div className="header-container">
         <Link to="/" className="logo">My College</Link>
         <nav className="desktop-nav">
-          <Link to="/home">Home</Link>
-          <Link to="/about">About</Link>
-          <Link to="/courses">Courses</Link>
-          <Link to="/admissions">Admissions</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/courses" className="nav-link">Courses</Link>
+          <Link to="/admissions" className="nav-link">Admissions</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
           <Link to="/apply" className="college-button">Apply Now</Link>
         </nav>
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
