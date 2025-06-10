@@ -46,6 +46,7 @@ const Admissions = () => {
                         </tr>
                         <tr>
                             <td>B.A. English Literature </td>
+
                             <td>10+2 (or equivalent)</td>
                             <td>Any Stream</td>
                             <td>40%</td>
