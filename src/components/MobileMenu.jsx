@@ -6,6 +6,7 @@ import './MobileMenu.css';
 const MobileMenu = ({ closeMenu }) => {
   return (
     <div className="mobile-menu">
+      <Link to="/" onClick={closeMenu}>Home</Link>
       <Link to="/about" onClick={closeMenu}>About</Link>
       <Link to="/courses" onClick={closeMenu}>Courses</Link>
       <Link to="/admissions" onClick={closeMenu}>Admissions</Link>
