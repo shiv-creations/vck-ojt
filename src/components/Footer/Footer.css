@@ -5,7 +5,10 @@
   background-color: #1a2a47;
   color: white;
   text-align: center;
-  width: 100%;
   padding: 10px 0;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content{
+  width: 100%;
 }
