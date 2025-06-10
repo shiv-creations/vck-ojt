@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main style={{ paddingTop: '70px', paddingBottom: '60px' }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

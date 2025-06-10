@@ -1,8 +1,13 @@
 /* src/components/Footer/Footer.css */
 .footer {
-  background-color: #1a2a47;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: auto;
+    position: fixed;        /* Fix to bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1a2a47;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;           /* Slightly lower than header */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
