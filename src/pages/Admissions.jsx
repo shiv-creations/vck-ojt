@@ -67,7 +67,7 @@ const Admissions = () => {
             </div>
 
             <div className="info-card">
-                <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our <Link to="/courses" className="nav-link-text">Courses page</Link> or <Link to="/contact" className="nav-link-text">Contact us</Link> directly.</p>
+                <p>For detailed information on postgraduate program admissions, specific program syllabi, and fee structures, please visit our <Link to="/Courses" className="nav-link-text">Courses page</Link> or <Link to="/Contact" className="nav-link-text">Contact us</Link> directly.</p>
             </div>
         </div>
     );
