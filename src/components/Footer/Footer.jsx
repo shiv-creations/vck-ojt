@@ -1,13 +1,13 @@
-//src/components/Footer/Footer.jsx
+// src/components/Footer/Footer.jsx
 import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
-    return (
-        <footer className="footer">
-            <div className="footer-content">
-                <p>&copy; {new Date().getFullYear()} My College. All rights reserved.</p>
-            </div>
+return (
+    <footer className="footer">
+        <div className="footer-content">
+            <p>&copy; {new Date().getFullYear()} Vivekanand College Kolhapur. All rights reserved.</p>
+        </div>
         </footer>
     );
 };

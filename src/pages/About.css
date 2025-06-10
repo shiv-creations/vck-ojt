@@ -21,3 +21,26 @@
     transform: translateY(0);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
+
+/* About.css */
+
+.info-card {
+    max-height: 800px;         /* Set the max visible height */
+    overflow-y: auto;          /* Enables vertical scroll when content overflows */
+    padding: 20px;             /* Optional: for spacing inside the block */
+    background-color: #fff;    /* Optional: white background */
+    border-radius: 10px;       /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: subtle shadow */
+    margin: 0 auto;            /* Center horizontally */
+    width: 80%;                /* Optional: width of the block */
+}
+
+/* Optional: add smoother scroll behavior */
+.info-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.info-card::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}

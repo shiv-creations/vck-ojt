@@ -13,24 +13,26 @@ import Admissions from './pages/Admissions';
 import ApplyNow from './pages/ApplyNow';
 import NotFoundPage from './pages/NotFoundPage';
 
-import './index.css';
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <Header />
-      <main style={{ paddingTop: '70px', paddingBottom: '60px' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/admissions" element={<Admissions />} />
-          <Route path="/apply" element={<ApplyNow />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </main>
-      <Footer />
+      <div className="hero-layout">
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/admissions" element={<Admissions />} />
+            <Route path="/apply" element={<ApplyNow />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
