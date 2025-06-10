@@ -1,10 +1,9 @@
-/* src/pages/NotFoundPage/NotFoundPage.css */
-
+/* src/pages/NotFoundPage.css */
 .not-found-content {
-    text-align: center;
-    padding: 50px; /* Moved from inline style in JSX */
+  text-align: center;
+  padding: 50px;
 }
 
 .not-found-content .college-button {
-    margin-top: 30px; /* Moved from inline style in JSX */
+  margin-top: 30px;
 }
