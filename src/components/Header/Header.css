@@ -1,121 +1,43 @@
-/* C:/OJT-project/src/components/Header/Header.css */
-
+/*src/components/Header/Header.css */
 .header {
-    background-color: #1E90FF; /* Darker teal for the header */
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: white;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  background-color: #1a2a47;
+  color: white;
+  padding: 10px 20px;
 }
 
-.college-logo {
-    color: white;
-    font-size: 1.8em;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.college-logo:hover {
-    color: #e0f2f1; /* Lighter teal on hover */
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
-.nav-links-container {
-    margin-left: auto; /* Pushes navigation to the right */
+.desktop-nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 25px; /* Spacing between navigation items */
-    flex-wrap: wrap; /* Allow nav items to wrap */
-    justify-content: center; /* Center items if they wrap */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
 }
 
-.nav-item {
-    margin: 0;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1em;
-    padding: 5px 0;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #80cbc4; /* Underline color */
-    left: 50%;
-    bottom: -5px;
-    transform: translateX(-50%);
-    transition: width 0.3s ease-out;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-}
-
-.nav-link:hover {
-    color: #b2dfdb; /* Lighter color on hover */
-}
-
-.nav-link.active {
-    color: #e0f2f1; /* Color for active link */
-    font-weight: bold;
-}
-
-/* Specific style for "Apply Now!" button if needed */
-.nav-link.apply-now {
-    background-color: #28a745; /* Green button */
-    padding: 8px 15px;
-    border-radius: 5px;
-    margin-left: 10px; /* Space from other nav items */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav-link.apply-now:hover {
-    background-color: #1E90FF;
-    transform: translateY(-1px);
-}
-
-.nav-link.apply-now::after {
-    display: none; /* No underline for the button */
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .nav-links-container {
-        margin-left: 0; /* Remove auto margin */
-        width: 100%;
-    }
-
-    .nav-list {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-link.apply-now {
-        margin-left: 0; /* Remove margin */
-        width: fit-content;
-        margin-top: 10px;
-    }
+  .desktop-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
 }
