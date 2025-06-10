@@ -33,21 +33,19 @@ const Admissions = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>UG</td>
                             <td>B.Sc. Computer Science</td>
                             <td>10+2 (or equivalent)</td>
+                            <td>Physics, Chemistry, Maths</td>
                             <td>50%</td>
                         </tr>
                         <tr>
-                            <td>UG</td>
                             <td>B.Com. Accounting & Finance</td>
                             <td>10+2 (or equivalent)</td>
                             <td>Commerce Stream</td>
                             <td>45%</td>
                         </tr>
                         <tr>
-                            <td>UG</td>
-                            <td>B.A. English Literature</td>
+                            <td>B.A. English Literature </td>
                             <td>10+2 (or equivalent)</td>
                             <td>Any Stream</td>
                             <td>40%</td>
