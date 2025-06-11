@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-
 import Home from './pages/Home';
 import About from './pages/About';
 import Courses from './pages/Courses';
@@ -13,6 +12,7 @@ import ApplyNow from './pages/ApplyNow';
 import NotFoundPage from './pages/NotFoundPage';
 
 import './App.css';
+import ChatbotComponent from './components/Chatbot/ChatbotComponents';
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
+        <ChatbotComponent />
         <Footer />
       </div>
     </Router>
