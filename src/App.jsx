@@ -1,32 +1,30 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import ContactPage from "./pages/ContactPage";
+import "./App.css"; // Import the main CSS file for global styles
+import "./pages/Styles/All-Pages.css";
+import AboutPage from "./pages/AboutPage";
+import CoursesPage from "./pages/CoursesPage";
+import AdmissionsPage from "./pages/AdmissionsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Courses from './pages/Courses';
-import Contact from './pages/Contact';
-import Admissions from './pages/Admissions';
-import ApplyNow from './pages/ApplyNow';
-import NotFoundPage from './pages/NotFoundPage';
-
-import './App.css';
-import ChatbotComponent from './components/Chatbot/ChatbotComponents';
+import ChatbotComponent from "./components/ChatBot/ChatbotComponents";
 
 function App() {
   return (
     <Router>
-      <div className="app-container">
+      <div className="main-layout">
         <Header />
-        <main className="main-content">
+        <main className="content">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/admissions" element={<Admissions />} />
-            <Route path="/apply" element={<ApplyNow />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/courses" element={<CoursesPage />} />
+            <Route path="/admissions" element={<AdmissionsPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
@@ -36,5 +34,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;
