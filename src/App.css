@@ -12,7 +12,7 @@
 .content {
   background-color: #52d2d2;
   /* Match header background */
-
+  overflow: auto;
   flex-grow: 1;
   /* This will make the content area take up all available space */
   display: flex;

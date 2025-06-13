@@ -1,8 +1,8 @@
 /* src/pages/pages.css  */
 .page-container {
-  max-width: 960px;
+  max-width: 1200px;
   /* Max width for content to prevent it from stretching too wide */
-  height: 500px;
+  height: 800px;
   margin: 20px auto;
   /* Center the content with some top/bottom margin */
   padding: 20px;

@@ -32,7 +32,14 @@ const ContactPage = () => {
       <p>
         {/* [You can embed a Google Map here later using an iframe or a React map library.] */}
         <br />
-        <a href="https://maps.google.com/?q=Vivekanand+College" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
+        <a href="https://maps.google.com/?q=Vivekanand+College" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/images/google-maps.png"
+            alt="Map Placeholder"
+            style={{ width: "35px", maxWidth: "50px", height: "auto" }}
+          />
+        View on Google Maps
+        </a>
       </p>
       {/* You can add a simple contact form here later */}
       <h2>Send Us a Message</h2>
