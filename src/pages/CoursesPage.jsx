@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CollegeTourVideo from '../assets/images/college-tour.mp4'; // Your imported video
 const CoursesPage = () => {
+   const kolhapurCampusVideoId = 'M-jZtoB-aVY'; // Correct YouTube video ID
+const embedUrl = `https://www.youtube.com/embed/${kolhapurCampusVideoId}`;
   return (
     <div className="page-container" style={{overflow:"auto"}}>
       <h1>Our Academic Programs</h1>
@@ -12,13 +14,17 @@ const CoursesPage = () => {
       {/* New Video Section */}
       <h2>Discover Campus Life</h2>
       <div className="video-container">
-        <video controls width="100%" height="auto" className="course-video">
-          <source src={CollegeTourVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <p className="video-caption">
-          Get a glimpse of the vibrant academic and social life at Vivekanand College.
-        </p>
+        {/* The src attribute uses the correct YouTube embed domain and the specific college video ID */}
+        <iframe
+          width="100%" // Ensure width is set for initial rendering
+          height="400" // Ensure height is set for initial rendering
+          src={embedUrl} // This uses the college's campus video from your provided embed code
+          title="Vivekanand College Kolhapur Campus Life" // Specific title for this video
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
       <h2>Undergraduate Programs (UG)</h2>
       <ul>

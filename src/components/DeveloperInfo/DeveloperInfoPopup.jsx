@@ -15,6 +15,9 @@ function DeveloperInfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqu
             <p className="student-name">{studentName}</p>
             <p className="unique-message">{uniqueMessage}</p>
             <button className="ok-button" onClick={onClose}>Got It!</button> {/* Another close option */}
+            <p className="footer-text">This app was developed as part of an OJT project.</p>
+            {/* Footer text or any additional information */}
+            <p className="footer-text">© {new Date().getFullYear()} Code-Wonders. All rights reserved.</p>
         </div>
         </div>
     );
