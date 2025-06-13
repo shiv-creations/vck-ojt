@@ -10,9 +10,8 @@ import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
-
-import ChatbotComponent from "./components/ChatBot/ChatbotComponents";
-
+import "./index.css"; // Import the main CSS file for global styles
+import ChatbotComponent from "./components/Chatbot/ChatbotComponent"; // Import the Chatbot component
 function App() {
   return (
     <Router>
