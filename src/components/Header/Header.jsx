@@ -16,7 +16,7 @@ function Header() {
       {" "}
       {/* Add a wrapper for header content */}
       <div className="college-name">
-        <Link to="/">Vivekanand College</Link>{" "}
+        <Link to="/">Vivekanand College, Kolhapur </Link>{" "}
         {/* College Name/Logo for desktop & mobile */}
       </div>
       {/* Desktop Navigation */}

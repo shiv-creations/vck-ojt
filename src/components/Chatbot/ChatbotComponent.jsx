@@ -138,7 +138,7 @@ const ChatbotComponent = () => {
         {!isChatOpen && (
             <button className="chatbot-open-button" onClick={toggleChat}>
             <img
-                src="/images/operator.png"
+                src="/images/chatbot1.png"
                 alt="Chat Icon"
                 style={{ width: "100px", height: "auto" }}
             />
@@ -178,7 +178,7 @@ const ChatbotComponent = () => {
                     )}
                     <p className={`${message.sender}-message`}>{message.text}</p>
                     {message.sender === "user" && (
-                        <div className="avatar user-avatar">:silhouette:</div>
+                        <div className="avatar user-avatar">🙋🏻</div>
                     )}
                     </div>
                 ))}
