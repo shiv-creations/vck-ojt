@@ -13,20 +13,22 @@
           alignItems: "center",
         }}
       >
+        <img
+          src="./images/error.png"
+          alt="Page Not Found"
+          style={{ marginTop: "20px", maxWidth: "240px", height: "auto" }}
+        />
         <h1>404 - Page Not Found</h1>
         <p>Oops! The page you're looking for doesn't exist.</p>
         <p>
           You might want to return to the{" "}
-          <Link to="/" className="btn">
-            Home Page
-          </Link>
-          .
+          <button style={{ background: "aqua", border: "2px solid aqua", color: "white", padding: "10px 20px", borderRadius: "5px" }}>
+            <Link to="/" className="btn">
+              Home Page
+            </Link>
+          </button>
         </p>
-        <img
-          src="https://via.placeholder.com/300x200?text=404+Error"
-          alt="Page Not Found"
-          style={{ marginTop: "20px", maxWidth: "100%", height: "auto" }}
-        />
+
       </div>
     );
   };
