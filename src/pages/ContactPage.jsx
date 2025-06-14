@@ -46,6 +46,25 @@ const ContactPage = () => {
       <p>
         [A contact form with fields for Name, Email, Subject, Message can be added here.]
       </p>
+      <form>
+        <div>
+          <label htmlFor="name">Name:</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label htmlFor="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label htmlFor="subject">Subject:</label><br />
+          <input type="text" id="subject" name="subject" required />
+        </div>
+        <div>
+          <label htmlFor="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   );
 }
