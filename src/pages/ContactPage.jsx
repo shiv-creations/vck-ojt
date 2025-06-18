@@ -80,9 +80,7 @@ const Contact = () => {
       </p>
       {/* You can add a simple contact form here later */}
       <h2>Send Us a Message</h2>
-      <p>
-        [A contact form with fields for Name, Email, Subject, Message can be added here.]
-      </p>
+
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"
