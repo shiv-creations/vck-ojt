@@ -45,5 +45,5 @@
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"] {
-  width: 100%;
+  width: 65%;
 }
