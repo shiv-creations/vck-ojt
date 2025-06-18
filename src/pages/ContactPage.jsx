@@ -1,5 +1,41 @@
 // src/pages/ContactPage.jsx
-const ContactPage = () => {
+import { useState } from "react";
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const scriptURL = "https://docs.google.com/spreadsheets/d/1IXZAq9_odlu7AcX0WwHEdb8jgFz3hlZO28TV8EYV_iI/edit?pli=1&gid=0#gid=0";
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+        alert("Message sent successfully!");
+      } else {
+        alert("Something went wrong. Try again.");
+      }
+    } catch (error) {
+      alert("Error: " + error.message);
+    }
+  };
   return (
     <div className="page-container" style={{overflow:"auto"}}>
       <h1>Contact Us</h1>
@@ -46,26 +82,36 @@ const ContactPage = () => {
       <p>
         [A contact form with fields for Name, Email, Subject, Message can be added here.]
       </p>
-      <form>
-        <div>
-          <label htmlFor="name">Name:</label><br />
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label><br />
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label htmlFor="subject">Subject:</label><br />
-          <input type="text" id="subject" name="subject" required />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          placeholder="Your Name"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Your Message"
+          required
+        />
+
         <button type="submit">Send Message</button>
       </form>
     </div>
   );
 }
-export default ContactPage;
+export default Contact;
