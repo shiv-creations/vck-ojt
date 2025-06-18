@@ -32,3 +32,18 @@
 .contact-form button:hover {
   background-color: #155ab6;
 }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #6c757d;
+  font-style: italic;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+  width: 100%;
+}

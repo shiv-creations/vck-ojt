@@ -4,6 +4,7 @@ import './Form.css'; // Import the CSS file for this page
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
+    phone: "",
     email: "",
     message: ""
   });
@@ -27,7 +28,7 @@ const Contact = () => {
 
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", phone: "", email: "", message: "" });
         alert("Message sent successfully!");
       } else {
         alert("Something went wrong. Try again.");
@@ -89,6 +90,15 @@ const Contact = () => {
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
+          required
+        />
+
+        <input
+          type="tel"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder="Your Phone Number"
           required
         />
 
