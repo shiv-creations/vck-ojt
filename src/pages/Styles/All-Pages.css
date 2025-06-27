@@ -2,7 +2,7 @@
 .page-container {
   max-width: 1200px;
   /* Max width for content to prevent it from stretching too wide */
-  height: 800px;
+  height: 600px;
   margin: 20px auto;
   /* Center the content with some top/bottom margin */
   padding: 20px;
